@@ -35,7 +35,19 @@ class Program
             Thread.Sleep(100);
             if (countA == countB)
             {
-                Console.WriteLine("CountA und CountB sind gleich: " + countA);
+                if (countA == 50)
+                {
+                    Console.WriteLine("Unentschieden(beide sind 50)");
+                }
+                else if (countA < 50)
+                {
+                    Console.WriteLine($"Gewinner ist Thread b mit {countB} ");
+                }
+                else if (countA > 50)
+                {
+                    Console.WriteLine($"Gewinner ist Thread a mit {countA}");
+                }
+                break;
 
 
             }
@@ -51,7 +63,8 @@ class Program
             Thread.Sleep(100);
             if (countA == countB)
             {
-                Console.WriteLine("CountA und CountB sind gleich: " + countA);
+              
+                break;
 
 
             }
